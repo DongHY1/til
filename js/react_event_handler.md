@@ -4,7 +4,7 @@
 
 for example:
 
-if we use this.xxx,we should bind the function in constructor
+if we use this.xxx,we should bind 'this' the function in constructor
 
 ```jsx
 class App extends Component{
@@ -30,5 +30,12 @@ if we don't like write too much in constructor,we can use **Arrow Function** in 
 <button onClick={(e)=>this.add(e)></button>
 ```
 
+Also we can use Arrow Funtion in original funtion
 
+```jsx
+add=()=>{
+  ....
+}
+<button onClick={this.add}></button>
+```
 
